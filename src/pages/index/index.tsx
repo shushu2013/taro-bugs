@@ -28,6 +28,12 @@ export default class Index extends Component {
     })
   }
 
+  handleSwiperTest = () => {
+    Taro.navigateTo({
+      url: '/pages/swiperTest/index'
+    })
+  }
+
   render () {
     return (
       <View className='index'>
@@ -46,6 +52,14 @@ export default class Index extends Component {
         >
           打开输入框测试页面
         </Button>
+
+        {/* <Button
+          onClick={this.handleSwiperTest}
+          className="btn"
+          type="primary"
+        >
+          打开 Swiper 测试页面
+        </Button> */}
       </View>
     )
   }
